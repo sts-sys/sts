@@ -1,0 +1,43 @@
+{
+    "name": "sts/app",
+    "description": "STS Framework",
+    "version": "1.0-dev",
+    "keywords": ["sts", "framework", "cli", "console"],
+    "homepage": "https://github.com/sts-sys/sts",
+    "authors": [
+        {
+            "name": "STS Team",
+            "email": "contact@sts-team.com"
+        },
+
+        {
+            "name": "StaarK",
+            "email": "ionuzcostin@gmail.com"
+        },
+
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/sts-sys/contributors",
+            "role": "contributor"
+        }
+    ],
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+
+    "require": {
+        "php": "^8.0",
+        "sts/core": "dev-master"
+    },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sts-sys/core"
+        }
+    ],
+
+    "config": {
+        "optimize-autoloader": true
+    }
+}
