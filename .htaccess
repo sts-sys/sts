@@ -1,14 +1,21 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteBase /
 
-# Redirecționează toate celelalte cereri către index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/.]*)/?$ public/index.php?route=$1 [L,QSA]
+# Permite accesul direct la fișierele statice (imagini, CSS, JS)
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule \.(css|js|png|jpg|jpeg|gif|ico)$ - [L]
 
 # Prevenirea accesului direct la fișiere sensibile
 RewriteRule ^(.*)\.(env|log|sh|bash|sql)$ - [F,L]
 
 # Blochează accesul la directoarele ascunse (.git, .svn, etc.)
 RewriteRule (^|/)\.(?!well-known/)(.*) - [F,L]
+
+RewriteRule ^.*$ public/index.php [L]
+
+# Redirecționează toate celelalte cereri către index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/.]*)/?$ public/index.php?route=$1 [L,QSA]
 </IfModule>
