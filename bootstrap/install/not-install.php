@@ -18,9 +18,11 @@ echo <<<HTML
         <p style="padding: 0 15px">The application leverages traits and directives for template management, allowing for complex templates with custom directives for error handling, dynamic content blocks, SEO optimization, form validation, and more. This structure provides flexibility and scalability, making it easy to extend and maintain.<br />Overall, your application aims to provide a powerful and user-friendly platform for developers to build, customize, and manage dynamic web content efficiently.</p>
         <hr>
         <h2 class="notice">Important Notice</h2>
-        <p>To get started, please follow the <a href="https://github.com/sts-sys/sts?tab=readme-ov-file#install" class="link">installation instructions</a>.</p>
-        <p>For help with your project, please join our <a href="https://github.com/sts-sys/sts" class="link">GitHub repository</a>.</p>
-        <p>For more information, please visit <a href="https://github.com/sts-sys/sts/wiki" class="link">our documentation</a>.</p>
+        <div style="text-align: left; width: auto; margin: 0 0 0 35%;">
+            <p>&#8611; To get started, please follow the <a style="color: #336a86" href="https://github.com/sts-sys/sts?tab=readme-ov-file#install" class="link">installation instructions</a>.</p>
+            <p>&#8611; For help with your project, please join our <a style="color: #336a86" href="https://github.com/sts-sys/sts" class="link">GitHub repository</a>.</p>
+            <p>&#8611; For more information, please visit <a style="color: #336a86" href="https://github.com/sts-sys/sts/wiki" class="link">our documentation</a>.</p>
+        </div>
         </div>
         <div style="text-align: center;"> 
         <span class="link" style="text-decoration: none;">&copy; 2024 - STS Solutions. All right reserved.</span> | <a style="text-decoration: none;" href="https://github.com/sts-sys/sts/issues" class="link">Report an Issue</a> | <a style="text-decoration: none;" href="https://github.com/sts-sys/sts/wiki" class="link">Learn More</a>
@@ -68,11 +70,11 @@ echo <<<HTML
                 box-shadow: 0 8px 4px #3e3a3a12;
             }
 
-            .error > p {
+            .error p {
                 padding: 0 5px;
                 margin: 4px auto;
             }
-            
+
             .logo {
                 display: block;
                 margin: 20px auto;
