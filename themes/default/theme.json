@@ -23,10 +23,10 @@
         "available_sidebars": ["left", "right"],
         "default_sidebar": "left",
         "color_scheme": {
-            "primary_color": "#3498db",
-            "secondary_color": "#2ecc71",
-            "background_color": "#ffffff",
-            "text_color": "#333333"
+            "primary_color": "#336A86",
+            "secondary_color": "#8EAEC4",
+            "background_color": "#336A86",
+            "text_color": "#283132"
         },
 
         "fonts": {
