@@ -1,4 +1,14 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule ^([^/.]*)/?$ public/index.php?_route_=$1 [L,QSA]
+
+# Redirecționează toate celelalte cereri către index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/.]*)/?$ public/index.php?route=$1 [L,QSA]
+
+# Prevenirea accesului direct la fișiere sensibile
+RewriteRule ^(.*)\.(env|log|sh|bash|sql)$ - [F,L]
+
+# Blochează accesul la directoarele ascunse (.git, .svn, etc.)
+RewriteRule (^|/)\.(?!well-known/)(.*) - [F,L]
 </IfModule>
