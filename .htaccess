@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^([^/.]*)/?$ public/index.php?_route_=$1 [L,QSA]
+</IfModule>

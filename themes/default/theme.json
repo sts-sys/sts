@@ -1,0 +1,64 @@
+{
+    "name": "Default Theme",
+    "version": "1.0.1-beta",
+    "author": "Your Name",
+    "description": "This is the default theme for the application.",
+    "license": "MIT",
+    "support": {
+        "documentation": "https://example.com/docs",
+        "support_email": "support@example.com"
+    },
+
+    "permissions": {
+        "admin": ["edit_theme", "delete_theme"],
+        "editor": ["edit_content"]
+    },
+
+    "settings": {
+        "custom_css": true,
+        "custom_js": false,
+        "enable_dark_mode": false,
+        "default_layout": "master",
+        "available_layouts": ["master"],
+        "available_sidebars": ["left", "right"],
+        "default_sidebar": "left",
+        "color_scheme": {
+            "primary_color": "#3498db",
+            "secondary_color": "#2ecc71",
+            "background_color": "#ffffff",
+            "text_color": "#333333"
+        },
+
+        "fonts": {
+            "body_font": "Arial, sans-serif",
+            "heading_font": "Georgia, serif"
+        }
+    },
+    "widgets": {
+        "header": {
+            "enabled": false,
+            "position": "top"
+        },
+        "footer": {
+            "enabled": false,
+            "position": "bottom"
+        }
+    },
+    "menus": {
+        "main_menu": ["home", "about", "services", "contact"],
+        "footer_menu": ["privacy_policy", "terms_of_service"]
+    },
+    "assets": {
+        "css": ["css/style.css", "css/responsive.css"],
+        "js": ["js/app.js"],
+        "images": ["img/logo.png", "img/background.jpg"]
+    },
+    "dependencies": {
+        "jquery": "^3.6.0",
+        "bootstrap": "^5.1"
+    },
+    "cache": {
+        "enabled": true,
+        "ttl": 3600
+    }
+}
